@@ -1,5 +1,26 @@
-* {}
-body {}
+/**
+* CARD
+*   MEDIA
+*     IMG
+*   BODY
+*     TITLE
+*     DESCRIPTION
+*     SHOW-BTN
+**/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  background-color: hsl(0, 0%, 95%);
+  font-size: 0.9375rem;
+}
 
 .card-list {}
 
@@ -15,4 +36,11 @@ body {}
   &__title {}
 }
 
-.attribution {}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
