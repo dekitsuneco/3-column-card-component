@@ -1,0 +1,18 @@
+* {}
+body {}
+
+.card-list {}
+
+.card {
+  &__body {}
+  
+  &__description {}
+  
+  &__media {}
+  
+  &__show-btn {}
+  
+  &__title {}
+}
+
+.attribution {}
