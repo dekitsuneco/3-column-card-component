@@ -1,3 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/**
+* CARD
+*   MEDIA
+*     IMG
+*   BODY
+*     TITLE
+*     DESCRIPTION
+*     SHOW-BTN
+**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card-list {
+  max-width: 70%;
+  margin: 3.8rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (min-width: 1080px) {
+  .card-list {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.card {
+  width: 100%;
+  padding: 2rem;
+}
+.card--theme-orange {
+  background-color: #e38826;
+}
+.card--theme-dark-cyan {
+  background-color: #006970;
+}
+.card--theme-darker-cyan {
+  background-color: #004241;
+}
+@media (min-width: 1080px) {
+  .card {
+    padding: 2.7rem;
+    padding-right: 4rem;
+  }
+}
+.card__media {
+  margin-bottom: 1.3rem;
+}
+@media (min-width: 1080px) {
+  .card__media {
+    margin-bottom: 1.7rem;
+  }
+}
+.card__title {
+  margin-bottom: 1.3rem;
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+@media (min-width: 1080px) {
+  .card__title {
+    margin-bottom: 1.7rem;
+  }
+}
+.card__description {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+@media (min-width: 1080px) {
+  .card__description {
+    height: 9rem;
+    margin-bottom: 3.1rem;
+  }
+}
+.card__show-btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+.card__show-btn:hover {
+  cursor: pointer;
+  outline: 1px solid #f2f2f2;
+}
+.card__show-btn--theme-orange {
+  color: #e38826;
+}
+.card__show-btn--theme-orange:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+.card__show-btn--theme-dark-cyan {
+  color: #006970;
+}
+.card__show-btn--theme-dark-cyan:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+.card__show-btn--theme-darker-cyan {
+  color: #004241;
+}
+.card__show-btn--theme-darker-cyan:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+}
+@media (min-width: 1080px) {
+  .card__show-btn {
+    padding: 0.8rem 1.8rem;
+  }
+}
+
+.attribution {
+  margin-top: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
 
 /*# sourceMappingURL=style.css.map */
