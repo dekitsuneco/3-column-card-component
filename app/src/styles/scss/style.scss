@@ -57,6 +57,15 @@ body {
     padding: 2.7rem;
     padding-right: 4rem;
   }
+    &--theme-orange {
+      background-color: hsl(31, 77%, 52%);
+    }
+    &--theme-dark-cyan {
+      background-color: hsl(184, 100%, 22%);
+    }
+    &--theme-darker-cyan {
+      background-color: hsl(179, 100%, 13%);
+    }
 
   &__media {
     margin-bottom: 1.3rem;
@@ -73,6 +82,7 @@ body {
   &__title {
     margin-bottom: 1.3rem;
 
+    color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
 
@@ -84,25 +94,36 @@ body {
   &__description {
     margin-bottom: 1.5rem;
 
+    color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.4rem;
     font-weight: 400;
 
     @media (min-width: 1080px) {
-      margin-bottom: 3.1rem;
       height: 9rem;
+      margin-bottom: 3.1rem;
     }
   }
   
   &__show-btn {
-    border-radius: 20px;
     padding: .7rem 1.4rem;
+    border-radius: 20px;
 
-    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 600;
 
     @media (min-width: 1080px) {
       padding: .8rem 1.8rem;
     }
   }
+    &__show-btn--theme-orange {
+      color: hsl(31, 77%, 52%);
+    }
+    &__show-btn--theme-dark-cyan {
+      color: hsl(184, 100%, 22%);
+    }
+    &__show-btn--theme-darker-cyan {
+      color: hsl(179, 100%, 13%);
+    }
 }
 
 .attribution {
