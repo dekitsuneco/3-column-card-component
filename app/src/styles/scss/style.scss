@@ -29,27 +29,50 @@ body {
 }
 
 .card-list {
-  width: 70%;
+  max-width: 70%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 
-
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .card {
-  
+  /*width: 90%;
+  margin: 5% auto;*/
+  width: 100%;
+  padding: 2rem;
+
+  border: 1px solid black;
+
+  &__media {
+    margin-bottom: 1.3rem;
+  }
 
   &__body {}
+
+  &__title {
+    margin-bottom: 1.3rem;
+
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+  }
   
-  &__description {}
+  &__description {
+    margin-bottom: 1rem;
+
+    font-weight: 400;
+  }
   
-  &__media {}
-  
-  &__show-btn {}
-  
-  &__title {}
+  &__show-btn {
+    border-radius: 20px;
+    padding: .5rem 1.2rem;
+
+    font-weight: 400;
+  }
 }
 
 .attribution {
