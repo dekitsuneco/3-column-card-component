@@ -9,6 +9,12 @@
 *     DESCRIPTION
 *     SHOW-BTN
 **/
+$orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$darker-cyan: hsl(179, 100%, 13%);
+
+$white: hsla(0, 0%, 100%, 0.75);
+$gray: hsl(0, 0%, 95%);
 
 * {
   box-sizing: border-box;
@@ -23,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   
-  background-color: hsl(0, 0%, 95%);
+  background-color: $gray;
   font-size: 0.9375rem;
   font-family: 'Lexend Deca', sans-serif;
 }
@@ -48,19 +54,19 @@ body {
   width: 100%;
   padding: 2rem;
 
+    &--theme-orange {
+      background-color: $orange;
+    }
+    &--theme-dark-cyan {
+      background-color: $dark-cyan;
+    }
+    &--theme-darker-cyan {
+      background-color: $darker-cyan;
+    }
   @media (min-width: 1080px) {
     padding: 2.7rem;
     padding-right: 4rem;
   }
-    &--theme-orange {
-      background-color: hsl(31, 77%, 52%);
-    }
-    &--theme-dark-cyan {
-      background-color: hsl(184, 100%, 22%);
-    }
-    &--theme-darker-cyan {
-      background-color: hsl(179, 100%, 13%);
-    }
 
   &__media {
     margin-bottom: 1.3rem;
@@ -77,7 +83,7 @@ body {
   &__title {
     margin-bottom: 1.3rem;
 
-    color: hsl(0, 0%, 95%);
+    color: $gray;
     font-size: 2rem;
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
@@ -90,7 +96,7 @@ body {
   &__description {
     margin-bottom: 1.5rem;
 
-    color: hsla(0, 0%, 100%, 0.75);
+    color: $white;
     line-height: 1.4rem;
     font-weight: 400;
 
@@ -104,24 +110,45 @@ body {
     padding: .7rem 1.4rem;
     border-radius: 20px;
 
-    background-color: hsl(0, 0%, 95%);
+    background-color: $gray;
     font-weight: 600;
     outline: none;
     border: none;
+
+    &:hover {
+      cursor: pointer;
+      outline: 1px solid $gray;
+    }
+
+    &--theme-orange {
+      color: $orange;
+
+      &:hover {
+        background-color: $orange;
+        color: $gray;
+      }
+    }
+    &--theme-dark-cyan {
+      color: $dark-cyan;
+      
+      &:hover {
+        background-color: $dark-cyan;
+        color: $gray;
+      }
+    }
+    &--theme-darker-cyan {
+      color: $darker-cyan;
+      
+      &:hover {
+        background-color: $darker-cyan;
+        color: $gray;
+      }
+    }
 
     @media (min-width: 1080px) {
       padding: .8rem 1.8rem;
     }
   }
-    &__show-btn--theme-orange {
-      color: hsl(31, 77%, 52%);
-    }
-    &__show-btn--theme-dark-cyan {
-      color: hsl(184, 100%, 22%);
-    }
-    &__show-btn--theme-darker-cyan {
-      color: hsl(179, 100%, 13%);
-    }
 }
 
 .attribution {
