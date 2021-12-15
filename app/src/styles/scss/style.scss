@@ -110,6 +110,8 @@ body {
 
     background-color: hsl(0, 0%, 95%);
     font-weight: 600;
+    outline: none;
+    border: none;
 
     @media (min-width: 1080px) {
       padding: .8rem 1.8rem;
