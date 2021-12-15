@@ -37,7 +37,6 @@ body {
 
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid black;
 
   @media (min-width: 1080px) {
     flex-direction: row;
@@ -46,12 +45,8 @@ body {
 }
 
 .card {
-  /*width: 90%;
-  margin: 5% auto;*/
   width: 100%;
   padding: 2rem;
-
-  border: 1px solid black;
 
   @media (min-width: 1080px) {
     padding: 2.7rem;
