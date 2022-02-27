@@ -20,10 +20,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #f2f2f2;
   font-size: 0.9375rem;
   font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-list {
