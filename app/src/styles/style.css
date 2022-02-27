@@ -75,6 +75,7 @@ body {
   font-size: 2rem;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
+  text-transform: uppercase;
 }
 @media (min-width: 1080px) {
   .card__title {
